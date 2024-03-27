@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  <link rel="stylesheet" href="css/style_rodape.css" type="text/css">
+
+  <title>Formulário Capítulo 2</title>
+
+  <link rel="shortcut icon" href="img/logo-branco.png" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
+
+  <script src="js/form.js" defer></script>
+  <script src="js/scripts.js" defer></script>
+</head>
+<style>
+  .form{
+    font-family: sans-serif;
+    font-size: medium;
+    text-align: justify;
+  }
+
+  fieldset{
+    border-radius: 5px;
+    padding: 10px; margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  legend{
+    font-weight: bold;
+  }
+
+  .botao_enviar{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+    
+</style>
+  <body>
+    <header>
+      <div class="inicio_header">
+        <div>
+          <a href="whoareus.html">
+            <img id="logo" src="img/logo-branco.png" />
+          </a>
+        </div>
+        <div class="inno">
+          InnoCode Solutions
+          <!-- <form>
+            <input type="search" placeholder="Pesquisar" color="white" />
+          </form> -->
+        </div>
+      </div>
+
+        <div class="final_header">
+            <div class="botoes_menu">
+                <a href="index.html"><button>Inicio</button></a>
+                <a href="form.html"><button>Formulário</button></a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="botao_capitulo">
+                    Capítulos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="capitulos/capitulo1.html">Capítulo 1</a></li>
+                        <li><a class="dropdown-item" href="capitulos/capitulo2.html">Capítulo 2</a></li>
+                        <li><a class="dropdown-item" href="capitulos/capitulo3.html">Capítulo 3</a></li>
+                        <li><a class="dropdown-item" href="capitulos/capitulo4.html">Capítulo 4</a></li>
+                        <!-- <li><hr class="dropdown-divider" /></li> -->
+                        <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                    </ul>
+                    </li>
+            </div>
+            <div>
+                <input type="checkbox" name="change_theme" id="change_theme" />
+                <label for="change_theme">
+                <i class="bi bi-sun"></i>
+                <i class="bi bi-moon"></i>
+                </label>
+            </div>
+        </div>
+    </header>
+    <div class="corpo">
+
+      <form id="questionnaire">
+        <fieldset>
+        <p><label for="q1"><legend>1. Qual é um dos Valores Ágeis destacados no Manifesto Ágil?</legend></label></p>
+        <p><input type="radio" name="q1" value="0"> a) Desenvolvimento orientado a testes.</p>
+        <p><input type="radio" name="q1" value="1"> b) Software em funcionamento. </p>
+        <p><input type="radio" name="q1" value="0"> c) Sprint Planning.</p>
+        <p><input type="radio" name="q1" value="0"> d) Hierarquia organizacional. </p>
+        <p><input type="radio" name="q1" value="0"> e) Contratos rígidos.  </p>
+      </fieldset>
+    
+        <fieldset>
+        <p><label for="q2"><legend>2. Em que tipo de sistemas o Scrum é mais frequentemente utilizado? </legend></label></p>
+        <p><input type="radio" name="q2" value="0"> a) Sistemas altamente burocráticos.</p> 
+        <p><input type="radio" name="q2" value="0"> b) Sistemas simples e previsíveis. </p>
+        <p><input type="radio" name="q2" value="0"> c) Sistemas caóticos e desordenados. </p>
+        <p><input type="radio" name="q2" value="1"> d) Sistemas adaptativos complexos.   </p>
+        <p><input type="radio" name="q2" value="0"> e) Sistemas estáticos e inflexíveis.  </p>
+        </fieldset>
+  
+    
+        <fieldset>
+        <p><label for="q3"><legend>3. Por que o Scrum é embasado no empirismo? </legend></label></p>
+        <p><input type="radio" name="q3" value="0"> a) Porque o Scrum é um processo simples e previsível. </p> 
+        <p><input type="radio" name="q3" value="0"> b) Porque o desenvolvimento de software é sempre estático e inflexível. </p>
+        <p><input type="radio" name="q3" value="1"> c) Porque o processo é complicado demais para utilizar uma abordagem empírica. </p>
+        <p><input type="radio" name="q3" value="0"> d) Porque o desenvolvimento de software não envolve incerteza. </p>
+        <p><input type="radio" name="q3" value="0"> e) Porque o Scrum é baseado em modelos teóricos pré-definidos. </p>
+        </fieldset>
+    
+        <fieldset>
+        <p><label for="q4"><legend>4. O que caracteriza cada etapa do ciclo de desenvolvimento Scrum?  </legend></label></p>
+        <p><input type="radio" name="q4" value="0"> a) Cada Sprint é composto por reunião de Sprint Review, trabalho de desenvolvimento do produto e reunião de Release Planning.</p> 
+        <p><input type="radio" name="q4" value="0"> b) Cada Sprint inclui reunião de Sprint Retrospective, reunião de Daily Scrum e trabalho de desenvolvimento do produto .</p>
+        <p><input type="radio" name="q4" value="0"> c) Cada Sprint consiste em reunião de Sprint Planning, trabalho de desenvolvimento do produto e reunião de Sprint Review.  </p>
+        <p><input type="radio" name="q4" value="0"> d) Cada Sprint é composto por reunião de Refinamento do Product Backlog, reunião de Sprint Retrospective e reunião de Sprint Planning. </p>
+        <p><input type="radio" name="q4" value="1"> e) Cada Sprint inclui reunião de Sprint Planning, reunião de Daily Scrum e trabalho de desenvolvimento do produto. </p>
+        </fieldset>
+        
+        <fieldset>
+        <p><label for="q5"><legend>5. Qual é a principal característica do Scrum?</legend></label></p>
+        <p><input type="radio" name="q5" value="0"> a) Foco em planos detalhados estabelecidos no início do projeto.</p> 
+        <p><input type="radio" name="q5" value="0"> b) Abordagem sequencial e codependente sem considerar possíveis erros. </p>
+        <p><input type="radio" name="q5" value="0"> c) Utilização de métodos tradicionais na gestão de produtos complexos.  </p>
+        <p><input type="radio" name="q5" value="1"> d) Abordagem iterativa e incremental para entregar valor com frequência.</p>
+        <p><input type="radio" name="q5" value="0"> e) Ênfase em retrabalho para garantir a qualidade do produto. </p>
+        </fieldset>
+  
+    
+  <!--joao epifanio adicionei o class btn para deixar os botões padronizados -->
+            <input class ="btn btn-primary" type="submit" value="Concluir">
+      </form>
+  
+      
+    </fieldset>
+      </div>
+  
+      <div id="result" style="display: none;">
+        <h2>Sua Nota:</h2>
+        <p id="nota"></p>
+      </div>
+    </div>
+  <!-- acesso ao link de acordo com o resultado do formulario -->
+    <a href="form3.html" id="resultLink" style="display: none;">Acesse o Link para o Formulário referente ao Capítulo 3 </a>
+
+
+    <footer>
+      <div class="rodapé">
+        <div id="footer_content">
+          <div id="footer_contacts">
+            <h1>Innocode Solutions</h1>
+            <p>Inovando o presente, codificando o futuro.</p>
+
+            <div id="footer_social_media">
+              <a href="https://github.com/InnoCodeSolutions/innoCodeSolutions" class="footer-link" id="github" target="_blank"> 
+              <i class="fa-brands fa-github"></i>
+              </a>
+
+              <a href="https://www.linkedin.com/in/innocode-solutions-9a2b3428b/" class="footer-link" id="linkedin" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+
+              <!-- colocar link para fale conosco -->
+              <a href="#" class="footer-link" id="email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <h3>Conteúdo</h3>
+            </li>
+            <li>
+              <a href="#Capítulo 1" class="footer-link">Capítulo 1</a>
+            </li>
+            <li>
+              <a href="#Capítulo 2" class="footer-link">Capítulo 2</a>
+            </li>
+            <li>
+              <a href="#Capítulo 3" class="footer-link">Capítulo 3</a>
+            </li>
+            <li>
+              <a href="#Capítulo 4" class="footer-link">Capítulo 4</a>
+            </li>
+            <!-- colocar link para formulario -->
+            <li>
+              <a href="#" class="footer-link">Formulário</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <h3>Institucional</h3>
+            </li>
+            <!-- colocar link para quem somos -->
+            <li>
+              <a href="whoareus.html" class="footer-link">Quem Somos?</a>
+            </li>
+            <!-- colocar link para fale conosco -->
+            <li>
+              <a href="#" class="footer-link">Fale Conosco</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div id="footer_innocode">InnoCode Solutions</div>
+          <div id="footer_innocode">
+            <img class="logorodape" src="img/logo-cinza.png" width="25" height="22"/>
+            Faculdade de Tecnologia de Jacareí "Professor Francisco de Moura"
+            <img class="logorodape" src="img/logo-cinza.png" width="25" height="22"/>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> -->
+</html>

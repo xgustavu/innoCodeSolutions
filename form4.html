@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  <link rel="stylesheet" href="css/style_rodape.css" type="text/css">
+
+  <title>Formulário Capítulo 4</title>
+
+  <link rel="shortcut icon" href="img/logo-branco.png" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
+
+  <script src="js/form.js" defer></script>
+  <script src="js/scripts.js" defer></script>
+</head>
+<style>
+  .form{
+    font-family: sans-serif;
+    font-size: medium;
+    text-align: justify;
+  }
+
+  fieldset{
+    border-radius: 5px;
+    padding: 10px; margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  legend{
+    font-weight: bold;
+  }
+
+  .botao_enviar{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+    
+</style>
+  <body>
+    <header>
+      <div class="inicio_header">
+        <div>
+          <a href="whoareus.html">
+            <img id="logo" src="img/logo-branco.png" />
+          </a>
+        </div>
+        <div class="inno">
+          InnoCode Solutions
+          <!-- <form>
+            <input type="search" placeholder="Pesquisar" color="white" />
+          </form> -->
+        </div>
+      </div>
+
+        <div class="final_header">
+            <div class="botoes_menu">
+                <a href="index.html"><button>Inicio</button></a>
+                <a href="form.html"><button>Formulário</button></a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="botao_capitulo">
+                    Capítulos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="capitulos/capitulo1.html">Capítulo 1</a></li>
+                        <li><a class="dropdown-item" href="capitulos/capitulo2.html">Capítulo 2</a></li>
+                        <li><a class="dropdown-item" href="capitulos/capitulo3.html">Capítulo 3</a></li>
+                        <li><a class="dropdown-item" href="capitulos/capitulo4.html">Capítulo 4</a></li>
+                        <!-- <li><hr class="dropdown-divider" /></li> -->
+                        <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                    </ul>
+                    </li>
+            </div>
+            <div>
+                <input type="checkbox" name="change_theme" id="change_theme" />
+                <label for="change_theme">
+                <i class="bi bi-sun"></i>
+                <i class="bi bi-moon"></i>
+                </label>
+            </div>
+        </div>
+    </header>
+    <div class="corpo">
+
+      <form id="questionnaire">
+        <fieldset>
+        <p><label for="q1"><legend>1. Qual é o papel do Scrum Master no Time Scrum? </legend></label></p>
+        <p><input type="radio" name="q1" value="0"> a) Desempenha um papel centralizador nas decisões do Time de Desenvolvimento.  </p>
+        <p><input type="radio" name="q1" value="1"> b) Atua como facilitador e potencializador do trabalho do Time de Scrum,
+           removendo impedimentos e promovendo mudanças na organização.  </p>
+        <p><input type="radio" name="q1" value="0"> c) É responsável por definir a visão do produto e gerenciar as releases do projeto.  </p>
+        <p><input type="radio" name="q1" value="0"> d) Colabora com o Time de Desenvolvimento nas decisões do que será realizado durante o Sprint,
+           mas não tem impacto na remoção de impedimentos.  </p>
+        <p><input type="radio" name="q1" value="0"> e) Age como representante do cliente e trabalha em estreita colaboração com os usuários finais.  </p>
+        </fieldset>
+    
+        <fieldset>
+        <p><label for="q2"><legend>2. Qual é a responsabilidade do Product Owner no Time Scrum?</legend></label></p>
+        <p><input type="radio" name="q2" value="0"> a) Facilitar o trabalho do Time de Scrum, removendo impedimentos e promovendo mudanças na organização. </p> 
+        <p><input type="radio" name="q2" value="0"> b) Gerar um Incremento do Produto pronto a partir dos itens mais importantes do Product Backlog. </p>
+        <p><input type="radio" name="q2" value="0"> c) Desempenhar um papel centralizador nas decisões do Time de Desenvolvimento.  </p>
+        <p><input type="radio" name="q2" value="1"> d) Decidir a melhor estratégia para as Releases do projeto e colaborar com o Time de Desenvolvimento nas decisões do Sprint. </p>
+        <p><input type="radio" name="q2" value="0"> e) Colaborar com o Time de Desenvolvimento nas decisões do que será realizado durante o Sprint. </p>
+        </fieldset>
+  
+    
+        <fieldset>
+        <p><label for="q3"><legend>3. Quais são as responsabilidades do Time de Desenvolvimento no Scrum? </legend></label></p>
+        <p><input type="radio" name="q3" value="0"> a) Definir a visão do produto e gerenciar as releases do projeto. </p> 
+        <p><input type="radio" name="q3" value="0"> b) Planejar o trabalho do Sprint em colaboração com o Product Owner e remover impedimentos.  </p>
+        <p><input type="radio" name="q3" value="1"> c) Realizar o trabalho de desenvolvimento do produto, gerando um Incremento do Produto pronto em cada Sprint.  </p>
+        <p><input type="radio" name="q3" value="0"> d) Atuar como facilitador e potencializador do trabalho do Time de Scrum.  </p>
+        <p><input type="radio" name="q3" value="0"> e) Colaborar com o Time de Desenvolvimento nas decisões do que será realizado durante o Sprint.  </p>
+        </fieldset>
+    
+        <fieldset>
+        <p><label for="q4"><legend>4. Como é a gestão de projetos no contexto do Scrum?  </legend></label></p>
+        <p><input type="radio" name="q4" value="0"> a) É centralizada em um Gerente de Projetos tradicionalmente definido. </p> 
+        <p><input type="radio" name="q4" value="1"> b) É descentralizada e distribuída entre os três papéis principais do Scrum, eliminando a necessidade de um Gerente de Projetos centralizador.  </p>
+        <p><input type="radio" name="q4" value="0"> c) Não é mencionada no texto como parte do Scrum.  </p>
+        <p><input type="radio" name="q4" value="0"> d) É uma responsabilidade exclusiva do Scrum Master. </p>
+        <p><input type="radio" name="q4" value="0"> e) É realizada pelos membros do Time de Scrum, mas de forma isolada. </p>
+        </fieldset>
+        
+        <fieldset>
+        <p><label for="q5"><legend>5. Quais são os valores e princípios essenciais do Scrum? </legend></label></p>
+        <p><input type="radio" name="q5" value="0"> a) Otimização de processos e decisões centralizadas.  </p> 
+        <p><input type="radio" name="q5" value="0"> b) Rigidez nas funções de cada membro do Time Scrum.  </p>
+        <p><input type="radio" name="q5" value="0"> c) Trabalho individual e foco na conclusão rápida do projeto.  </p>
+        <p><input type="radio" name="q5" value="1"> d) Transparência, inspeção e adaptação ao longo do desenvolvimento do produto.  </p>
+        <p><input type="radio" name="q5" value="0"> e) A hierarquia tradicional de gerenciamento de projetos.  </p>
+        </fieldset>
+  
+    
+  <!--joao epifanio adicionei o class btn para deixar os botões padronizados -->
+            <input class ="btn btn-primary" type="submit" value="Concluir">
+      </form>
+  
+      
+    </fieldset>
+      </div>
+  
+      <div id="result" style="display: none;">
+        <h2>Sua Nota:</h2>
+        <p id="nota"></p>
+      </div>
+    </div>
+  <!-- acesso ao link para emitir o certificado -->
+    <a href="certificado/certificado.html" id="resultLink" style="display: none;" target="_blank">Acesse o Link para gerar o certificado </a>
+
+
+    <footer>
+      <div class="rodapé">
+        <div id="footer_content">
+          <div id="footer_contacts">
+            <h1>Innocode Solutions</h1>
+            <p>Inovando o presente, codificando o futuro.</p>
+
+            <div id="footer_social_media">
+              <a href="https://github.com/InnoCodeSolutions/innoCodeSolutions" class="footer-link" id="github" target="_blank"> 
+              <i class="fa-brands fa-github"></i>
+              </a>
+
+              <a href="https://www.linkedin.com/in/innocode-solutions-9a2b3428b/" class="footer-link" id="linkedin" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+
+              <!-- colocar link para fale conosco -->
+              <a href="mailto:innocodesolutions@gmail.com" class="footer-link" id="email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <h3>Conteúdo</h3>
+            </li>
+            <li>
+              <a href="capitulos/capitulo1.html" class="footer-link">Capítulo 1</a>
+            </li>
+            <li>
+              <a href="capitulos/capitulo2.html" class="footer-link">Capítulo 2</a>
+            </li>
+            <li>
+              <a href="capitulos/capitulo3.html" class="footer-link">Capítulo 3</a>
+            </li>
+            <li>
+              <a href="capitulos/capitulo4.html" class="footer-link">Capítulo 4</a>
+            </li>
+            <!-- colocar link para formulario -->
+            <li>
+              <a href="form.html" class="footer-link">Formulário</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <h3>Institucional</h3>
+            </li>
+            <!-- colocar link para quem somos -->
+            <li>
+              <a href="whoareus.html" class="footer-link">Quem Somos?</a>
+            </li>
+            <!-- colocar link para fale conosco -->
+            <li>
+              <a href="https://github.com/InnoCodeSolutions/innoCodeSolutions/issues" class="footer-link">Fale Conosco</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div id="footer_innocode">InnoCode Solutions</div>
+          <div id="footer_innocode">
+            <img class="logorodape" src="img/logo-cinza.png" width="25" height="22"/>
+            Faculdade de Tecnologia de Jacareí "Professor Francisco de Moura"
+            <img class="logorodape" src="img/logo-cinza.png" width="25" height="22"/>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> -->
+</html>

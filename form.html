@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  <link rel="stylesheet" href="css/style_rodape.css" type="text/css">
+
+  <title>Formulário Capítulo 1</title>
+
+  <link rel="shortcut icon" href="img/logo-branco.png" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
+
+  <script src="js/form.js" defer></script>
+  <script src="js/scripts.js" defer></script>
+</head>
+<style>
+  .form{
+    font-family: sans-serif;
+    font-size: medium;
+    text-align: justify;
+  }
+
+  fieldset{
+    border-radius: 5px;
+    padding: 10px; margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  legend{
+    font-weight: bold;
+  }
+
+  .botao_enviar{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+    
+</style>
+  <body>
+    <header>
+      <div class="inicio_header">
+        <div>
+          <a href="whoareus.html">
+            <img id="logo" src="img/logo-branco.png" />
+          </a>
+        </div>
+        <div class="inno">
+          InnoCode Solutions
+          <!-- <form>
+            <input type="search" placeholder="Pesquisar" color="white" />
+          </form> -->
+        </div>
+      </div>
+
+        <div class="final_header">
+            <div class="botoes_menu">
+                <a href="index.html"><button>Inicio</button></a>
+                <a href="form.html"><button>Formulário</button></a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="botao_capitulo">
+                    Capítulos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="capitulos/capitulo1.html">Capítulo 1</a></li>
+                        <li><a class="dropdown-item" href="capitulos/capitulo2.html">Capítulo 2</a></li>
+                        <li><a class="dropdown-item" href="capitulos/capitulo3.html">Capítulo 3</a></li>
+                        <li><a class="dropdown-item" href="capitulos/capitulo4.html">Capítulo 4</a></li>
+                        <!-- <li><hr class="dropdown-divider" /></li> -->
+                        <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                    </ul>
+                    </li>
+            </div>
+            <div>
+                <input type="checkbox" name="change_theme" id="change_theme" />
+                <label for="change_theme">
+                <i class="bi bi-sun"></i>
+                <i class="bi bi-moon"></i>
+                </label>
+            </div>
+        </div>
+    </header>
+    <div class="corpo">
+
+      <form id="questionnaire">
+        <fieldset>
+        <p><label for="q1"><legend>1. O que é o Manifesto Ágil e quais são os valores-chave que ele estabeleceu?</legend></label></p>
+        <p><input type="radio" name="q1" value="0"> a) O Manifesto Ágil é um documento legal que estabelece regras para o desenvolvimento ágil. 
+          Os valores-chave são documentação extensa, planos fixos, burocracia e prazos rígidos.</p>
+        <p><input type="radio" name="q1" value="1"> b) O Manifesto Ágil é um conjunto de princípios para o desenvolvimento ágil. Os valores-chave são indivíduos e interações, 
+          software funcional, colaboração com o cliente e adaptação a mudanças. </p>
+        <p><input type="radio" name="q1" value="0"> c) O Manifesto Ágil é um livro que descreve métodos tradicionais de gerenciamento de projetos. 
+          Os valores-chave são contratos rígidos, resistência à mudança, cultura hierárquica e requisitos rígidos. </p>
+        <p><input type="radio" name="q1" value="0"> d) O Manifesto Ágil é uma estrutura de gerenciamento de projetos ágeis. 
+          Os valores-chave são sprints longos, documentação extensa, negociação de contratos e entrega única.</p>
+        <p><input type="radio" name="q1" value="0"> e) O Manifesto Ágil é um código de ética para empresas de tecnologia. Os valores-chave são comunicação direta, prazos estabelecidos, 
+          burocracia e cultura hierárquica. </p>
+        </fieldset>
+    
+        <fieldset>
+        <p><label for="q2"><legend>2. Quais são os princípios-chave das Metodologias Ágeis?</legend></label></p>
+        <p><input type="radio" name="q2" value="0"> a) Princípios rígidos, requisitos fixos, documentação extensa.</p> 
+        <p><input type="radio" name="q2" value="0"> b) Colaboração com o cliente, entrega única, negociação de contratos. </p>
+        <p><input type="radio" name="q2" value="0"> c) Sprints longos, burocracia, cultura hierárquica. </p>
+        <p><input type="radio" name="q2" value="1"> d) Satisfazer o cliente, adaptar mudanças nos requisitos, promover entregas frequentes. </p>
+        <p><input type="radio" name="q2" value="0"> e) Contratos rígidos, prazos estabelecidos, resistência à mudança. </p>
+        </fieldset>
+  
+    
+        <fieldset>
+        <p><label for="q3"><legend>3. Qual é o principal benefício da equipe de desenvolvimento de software ao adotar o Scrum?</legend></label></p>
+        <p><input type="radio" name="q3" value="0"> a) Redução da flexibilidade nas estratégias de marketing.</p> 
+        <p><input type="radio" name="q3" value="0"> b) Realização de Sprints de longa duração. </p>
+        <p><input type="radio" name="q3" value="1"> c) Entrega de incrementos de um software funcional. </p>
+        <p><input type="radio" name="q3" value="0"> d) Manutenção de estratégias de campanha inalteradas. </p>
+        <p><input type="radio" name="q3" value="0"> e) Isolamento dos clientes durante o processo de desenvolvimento. </p>
+        </fieldset>
+    
+        <fieldset>
+        <p><label for="q4"><legend>4. Qual ferramenta de gestão visual é utilizada por uma equipe de suporte técnico para rastrear e priorizar as solicitações de suporte? </legend></label></p>
+        <p><input type="radio" name="q4" value="0"> a) Gráfico de Gantt.</p> 
+        <p><input type="radio" name="q4" value="0"> b) Tabela de horários.</p>
+        <p><input type="radio" name="q4" value="1"> c) Quadro Kanban. </p>
+        <p><input type="radio" name="q4" value="0"> d) Diagrama de Ishikawa. </p>
+        <p><input type="radio" name="q4" value="0"> e) Planilha eletrônica. </p>
+        </fieldset>
+        
+        <fieldset>
+        <p><label for="q5"><legend>5. Quais práticas do Extreme Programming (XP) são seguidas por uma equipe de desenvolvimento de software para obter software de alta qualidade?</legend></label></p>
+        <p><input type="radio" name="q5" value="0"> a) Gráfico de Gantt e desenvolvimento iterativo.</p> 
+        <p><input type="radio" name="q5" value="1"> b) Programação em pares e desenvolvimento orientado a testes. </p>
+        <p><input type="radio" name="q5" value="0"> c) Modelo em cascata e documentação extensa. </p>
+        <p><input type="radio" name="q5" value="0"> d) Requisitos rígidos e burocracia.</p>
+        <p><input type="radio" name="q5" value="0"> e) Sprint longos e negociação de contratos.</p>
+        </fieldset>
+  
+    
+  <!--joao epifanio adicionei o class btn para deixar os botões padronizados -->
+            <input class ="btn btn-primary" type="submit" value="Concluir">
+      </form>
+  
+      
+    </fieldset>
+      </div>
+  
+      <div id="result" style="display: none;">
+        <h2>Sua Nota:</h2>
+        <p id="nota"></p>
+      </div>
+    </div>
+  <!-- acesso ao link de acordo com o resultado do formulario -->
+    <a href="form2.html" id="resultLink" style="display: none;">Acesse o Link para o Formulário referente ao Capítulo 2 </a>
+
+
+    <footer>
+      <div class="rodapé">
+        <div id="footer_content">
+          <div id="footer_contacts">
+            <h1>Innocode Solutions</h1>
+            <p>Inovando o presente, codificando o futuro.</p>
+
+            <div id="footer_social_media">
+              <a href="https://github.com/InnoCodeSolutions/innoCodeSolutions" class="footer-link" id="github" target="_blank"> 
+              <i class="fa-brands fa-github"></i>
+              </a>
+
+              <a href="https://www.linkedin.com/in/innocode-solutions-9a2b3428b/" class="footer-link" id="linkedin" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+
+              <!-- colocar link para fale conosco -->
+              <a href="#" class="footer-link" id="email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <h3>Conteúdo</h3>
+            </li>
+            <li>
+              <a href="#Capítulo 1" class="footer-link">Capítulo 1</a>
+            </li>
+            <li>
+              <a href="#Capítulo 2" class="footer-link">Capítulo 2</a>
+            </li>
+            <li>
+              <a href="#Capítulo 3" class="footer-link">Capítulo 3</a>
+            </li>
+            <li>
+              <a href="#Capítulo 4" class="footer-link">Capítulo 4</a>
+            </li>
+            <!-- colocar link para formulario -->
+            <li>
+              <a href="#" class="footer-link">Formulário</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <h3>Institucional</h3>
+            </li>
+            <!-- colocar link para quem somos -->
+            <li>
+              <a href="whoareus.html" class="footer-link">Quem Somos?</a>
+            </li>
+            <!-- colocar link para fale conosco -->
+            <li>
+              <a href="#" class="footer-link">Fale Conosco</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div id="footer_innocode">InnoCode Solutions</div>
+          <div id="footer_innocode">
+            <img class="logorodape" src="img/logo-cinza.png" width="25" height="22"/>
+            Faculdade de Tecnologia de Jacareí "Professor Francisco de Moura"
+            <img class="logorodape" src="img/logo-cinza.png" width="25" height="22"/>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> -->
+</html>

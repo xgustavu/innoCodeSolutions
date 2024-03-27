@@ -1,0 +1,93 @@
+.rodapé{
+    align-items: center;
+    justify-content: center;
+    width: 105vw;
+    height: 250px;
+    background-color: #848484;
+    margin-top: 30px;
+    margin-left: -8px; margin-right: -8px;
+
+    box-shadow: 0.5px 0.5px 8px 0.5px #414141;
+    bottom: 0;
+}
+footer{
+    width: 99.3%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.footer-link{
+    text-decoration: none;
+    list-style-type: square;
+}
+#footer_content{
+    background-color: #848484;
+    display: grid;
+    
+    grid-template-columns: repeat(3,1fr);
+    padding: 3rem 3.5rem;
+}
+#footer_contacts h1{
+    margin-bottom: 0.75rem;
+}
+#footer_social_media{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+#footer_social_media .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i{
+    font-size: 1.25rem
+}
+#footer_social_media .footer-link:hover{
+    opacity: 0.8;
+}
+#github{
+    background: #848484;
+}
+#linkedin{
+    background: #848484;
+}
+#email{
+    background: #848484;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    list-style: none;
+}
+
+.footer-list .footer-link{
+    color: white;
+    transition: all 0.4s;
+}
+
+
+.footer-list .footer-link:hover{
+    color: rgb(92, 90, 90);
+}
+
+#footer_innocode{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+#logorodape{
+    float:inline-start
+}

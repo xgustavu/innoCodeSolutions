@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificado</title>
+
+    <link rel="shortcut icon" href="../img/logo-branco.png" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/certificado.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=WindSong%3A400"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400"
+    />
+</head>
+<body>
+    <div class="nome_ra">
+        <div class="nome">
+            <label>Insira apenas seu primeiro e último nome:</label>
+            <br>
+            <input type="text" id="entrada" oninput="atualizarNome()" required>
+        </div>
+        <div class="btn"><button onclick="redirecionar()" id="mostrarDiv">Enviar</button></div>
+    </div>
+    <div id="certificado">
+        <!-- <div id="saida"></div> -->
+        
+        <!-- <div class="nome_usuario">Alterar</div> --> <!-- Modificado para usar a classe "nome_usuario" -->
+
+
+        <div class="ipad-mini-83-1-15C">
+            <img class="ipad-mini-8-1-2kz" src="./img/ipad-mini-8-1.png" />
+            <div class="nome_usuario">Seu nome</div>
+        </div>
+    </div>
+</body>
+</html>
